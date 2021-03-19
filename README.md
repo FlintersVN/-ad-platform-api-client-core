@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- This project contains core, common and dependencies for a concrete media api client depends on
+This project contains core, common and dependencies for a concrete media api client depends on
 
 ## Stack
 
