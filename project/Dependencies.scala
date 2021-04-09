@@ -2,7 +2,7 @@ import sbt._
 
 
 object Versions {
-  val sttpTapir = "0.17.19"
+  val sttpTapir = "0.18.0-M4"
 }
 object Dependencies {
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.2"
