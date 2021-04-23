@@ -13,10 +13,11 @@ lazy val root = (project in file("."))
       sttp_tapir_core,
       sttp_tapir_client,
       sttp_tapir_json,
+      sttp_tapir_refined,
       sttp_tapir_openapi_doc,
       sttp_tapir_openapi_yml,
 
-      enumeratum_tapir
+      sttp_tapir_enumeratum
     )
   )
 
