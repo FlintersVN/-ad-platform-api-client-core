@@ -4,6 +4,9 @@ ThisBuild / scalaVersion     := "2.13.4"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "co.flinters"
 
+ThisBuild / githubOwner := "FlintersVN"
+ThisBuild / githubRepository := "ad-platform-api-client-core"
+
 lazy val root = (project in file("."))
   .settings(
     name := "ad-platform-api-client-core",
