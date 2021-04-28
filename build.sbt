@@ -3,9 +3,9 @@ import Dependencies._
 ThisBuild / scalaVersion := "2.13.4"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
-ThisBuild / sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
-ThisBuild / sonatypeProfileName := "io.d11"
+// ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
+// ThisBuild / sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+// ThisBuild / sonatypeProfileName := "io.d11"
 
 inThisBuild(
   List(
@@ -14,6 +14,9 @@ inThisBuild(
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
     ),
+    sonatypeCredentialHost := "s01.oss.sonatype.org",
+    sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
+    sonatypeProfileName := "io.d11",
     publishArtifact in Test := false
   )
 )
