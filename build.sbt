@@ -3,9 +3,9 @@ import Dependencies._
 ThisBuild / scalaVersion := "2.13.4"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild/ sonatypeCredentialHost := "s01.oss.sonatype.org",
-ThisBuild/ sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
-ThisBuild/ sonatypeProfileName := "io.d11",
+ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
+ThisBuild / sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+ThisBuild / sonatypeProfileName := "io.d11"
 
 inThisBuild(
   List(
