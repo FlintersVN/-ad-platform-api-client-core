@@ -2,11 +2,10 @@ import Dependencies._
 
 ThisBuild / scalaVersion := "2.13.4"
 ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / organization := "io.github.flintersvn"
 
 inThisBuild(
   List(
-    organization := "com.geirsson",
+    organization := "io.github.flintersvn",
     homepage := Some(url("https://github.com/FlintersVN")),
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
