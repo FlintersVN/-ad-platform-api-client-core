@@ -16,5 +16,5 @@ jobs:
           SBT_VERSIONS: "1.3.0"
           SCALA_VERSIONS: "2.13.0"
         uses: lokkju/github-action-sbt@v0.2.2
-          with:
-            commands: publish
+        with:
+          commands: publish
