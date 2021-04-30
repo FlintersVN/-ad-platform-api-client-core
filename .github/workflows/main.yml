@@ -3,6 +3,8 @@ name: Scala CI
 on:
   push:
     branches: [ main, setup_release]
+    tags:
+      - "v*"
   pull_request:
     branches: [ main, setup_release]
 
