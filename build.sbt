@@ -10,6 +10,14 @@ inThisBuild(
     homepage := Some(url("https://github.com/FlintersVN")),
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
+    ),
+    developers := List(
+      Developer(
+        "huy_ngq",
+        "Nguyen Quang Huy",
+        "huy_ngq@septeni-technology.jp",
+        url("https://github.com/FlintersVN")
+      )
     )
   )
 )
