@@ -18,6 +18,12 @@ jobs:
           fetch-depth: 0
       - uses: olafurpg/setup-scala@v10
       - uses: olafurpg/setup-gpg@v3
+      - name: Import GPG Key
+        uses: crazy-max/ghaction-import-gpg@v1
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
+      - run: gpg --list-secret-keys infra@septeni-technology.jp
       - name: Coursier cache
         uses: coursier/cache-action@v5
       - run: sbt ci-release
@@ -26,4 +32,3 @@ jobs:
           PGP_SECRET: ${{ secrets.PGP_SECRET }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
-      - run: gpg --list-keys
