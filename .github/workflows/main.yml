@@ -6,15 +6,12 @@ on:
     tags:
       - "v*"
   pull_request:
-    branches: [ main, setup_release]
+    branches: [ main]
 
 jobs:
   build:
 
     runs-on: ubuntu-20.04
-    permissions: 
-      contents: read
-      packages: write 
     steps:
       - uses: actions/checkout@v2.3.4
         with:
