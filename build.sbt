@@ -39,3 +39,5 @@ lazy val root = (project in file("."))
 Global / scalacOptions ++= Seq(
   "-Xlint:unused"
 )
+
+addCommandAlias("release", ";+publishSigned ;sonatypeReleaseAll")
