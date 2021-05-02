@@ -1,8 +1,8 @@
 import Dependencies._
 
-// ThisBuild / scalaVersion := "2.13.4"
+ThisBuild / scalaVersion := "2.13.4"
 ThisBuild / crossScalaVersions := List("2.12.13", "2.13.4")
-// ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version := "0.1.0-SNAPSHOT"
 
 inThisBuild(
   List(
