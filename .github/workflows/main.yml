@@ -22,7 +22,7 @@ jobs:
       - run: echo $PGP_SECRET | base64 -d > $HOME/.gnupg/secring.gpg
         env:
           PGP_SECRET: ${{ secrets.PGP_SECRET }}
-      - run: export PGP_PUBLIC=$(gpg --armor --export $LONG_ID | base64)
+      - run: echo $PGP_PUBLIC | base64 -d > $HOME/.gnupg/pubring.gpg
         env:
           PGP_PUBLIC: ${{ secrets.PGP_PUBLIC }}
       - name: Coursier cache
