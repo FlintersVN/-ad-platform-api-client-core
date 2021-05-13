@@ -33,7 +33,8 @@ lazy val root = (project in file("."))
       sttp_tapir_refined,
       sttp_tapir_openapi_doc,
       sttp_tapir_openapi_yml,
-      sttp_tapir_enumeratum
+      sttp_tapir_enumeratum,
+      sttp_tapir_newtype
     )
   )
   .settings(

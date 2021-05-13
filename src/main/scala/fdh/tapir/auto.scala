@@ -5,6 +5,7 @@ import sttp.tapir.json.circe._
 import sttp.tapir.generic.SchemaDerivation
 import sttp.tapir.codec.refined.TapirCodecRefined
 import sttp.tapir.codec.enumeratum.TapirCodecEnumeratum
+import sttp.tapir.codec.newtype.TapirCodecNewType
 
 object auto extends Tapir
   with SchemaDerivation
@@ -12,3 +13,4 @@ object auto extends Tapir
   with TapirAliases
   with TapirCodecRefined
   with TapirCodecEnumeratum
+  with TapirCodecNewType

@@ -1,7 +1,7 @@
 import sbt._
 
 object Versions {
-  val sttpTapir = "0.18.0-M7"
+  val sttpTapir = "0.18.0-M10"
 }
 object Dependencies {
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.2"
@@ -19,4 +19,8 @@ object Dependencies {
     "com.softwaremill.sttp.tapir" %% "tapir-refined" % Versions.sttpTapir
   lazy val sttp_tapir_enumeratum =
     "com.softwaremill.sttp.tapir" %% "tapir-enumeratum" % Versions.sttpTapir
+
+  lazy val sttp_tapir_newtype =
+    "com.softwaremill.sttp.tapir" %% "tapir-newtype" % Versions.sttpTapir
+
 }
