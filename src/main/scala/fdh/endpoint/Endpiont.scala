@@ -10,7 +10,7 @@ trait Endpoint {
 }
 
 object Endpoint {
-  type Aux[I, E, O, R] = fdh.endpoint.Endpoint {
+  type Aux[I, E, O, R] = Endpoint {
     type Input = I
     type Error = E
     type Output = O
