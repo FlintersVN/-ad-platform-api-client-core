@@ -15,7 +15,7 @@ inThisBuild(
       Developer(
         "huy_ngq",
         "Nguyen Quang Huy",
-        "huy_ngq@septeni-technology.jp",
+        "qhquanghuy96@gmail.com",
         url("https://github.com/FlintersVN")
       )
     )
