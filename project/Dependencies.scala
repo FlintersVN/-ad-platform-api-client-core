@@ -5,7 +5,6 @@ object Versions {
 }
 object Dependencies {
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.2"
-  lazy val sttp_tapir_core = "com.softwaremill.sttp.client3" %% "core" % "3.1.9"
   lazy val sttp_tapir_json =
     "com.softwaremill.sttp.tapir" %% "tapir-json-circe" % Versions.sttpTapir
   lazy val sttp_tapir_openapi_doc =
